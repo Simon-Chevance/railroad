@@ -1,4 +1,4 @@
-# 5bloc Raildroad Project
+# 5BLOC-railroad
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/5bloc2/5bloc-raildroad-project.git
+git remote add origin https://gitlab.com/5bloc2/5bloc-railroad.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/5bloc2/5bloc-raildroad-project/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/5bloc2/5bloc-railroad/-/settings/integrations)
 
 ## Collaborate with your team
 
