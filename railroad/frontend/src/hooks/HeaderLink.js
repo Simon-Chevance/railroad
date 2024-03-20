@@ -5,7 +5,7 @@ export default function HeaderLink(props) {
     let navigate = useNavigate();
     let toRender =
         <div
-            style={{color:"#FFF",fontFamily:"LEMONMILK"}}
+            style={{color:"#000",fontFamily:"LEMONMILK"}}
             onAuxClick={(e)=>{if(e.button===1){window.open("/"+props.target+"?td=true", "_blank")}}}
             onClick={()=>{navigate("/"+props.target+"?td=true")}}
             className={"menuNC flexCenter"}>
