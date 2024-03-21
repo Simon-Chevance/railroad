@@ -855,7 +855,7 @@ class Home extends Component {
 							width: "100%",
 							display: "flex",
 							justifyContent: "flex-start",
-							alignItems: "flex-start",
+							alignItems: "center",
 							overflow: "auto",
 							transition: "all 1.5s cubic-bezier(.25,.8,.25,1)",
 							animation: "all 1.5s cubic-bezier(.25,.8,.25,1)",
@@ -1107,6 +1107,7 @@ class Home extends Component {
 								)}
 							</DialogContent>
 						</Dialog>
+						
 						{/*=============Panel================*/}					
 						{/*=============Fin Panel================*/}
 						{/*=============Panel Bus================*/}					
@@ -1450,9 +1451,7 @@ class Home extends Component {
 								}}>
 									<img
 									style={{
-										height:290,
 										width: 462,
-										padding: 25,
 										borderRadius:70
 									}}
 							src={require("../assets/carte_train.jpg")} // Remplacez par le chemin de votre image
@@ -1881,8 +1880,9 @@ class Home extends Component {
 									)}
 								</div>
 							</div>
-						</div>
-					</div>
+						</div>	
+				</div>
+					
 				)}
 			</div>
 		);
