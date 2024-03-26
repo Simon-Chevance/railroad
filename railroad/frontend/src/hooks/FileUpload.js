@@ -509,7 +509,7 @@ const FileUpload = () => {
 			</div>
 
 			<div style={{ flexDirection: "row" }} className={"flexCenter"}>
-				<label>Choisissez un fichier</label>
+				<label>Image :</label>
 				<input className={"inputDiv"} type="file" onChange={changeHandler} />
 			</div>
 			<button
