@@ -135,8 +135,7 @@ class AdminCards extends Component {
                 <div className={"flexCenter backgroundGradient"} style={{width:'100%', height:70}}>
                     <div onAuxClick={(e)=>{if(e.button===1){window.open('/BtoBDesign/Accueil', "_blank")}}} onClick={()=>{this.goToPage("/BtoBDesign/Accueil")}} style={{display:"flex",cursor:"pointer", justifyContent:"center", alignItems:"center",width:"fit-content"}}>
                         <div style={{display:"flex", justifyContent:"center",alignItems:"center", padding:0, userSelect:"none", marginLeft:20, width:'fit-content'}}>
-                            <img style={{width:50, marginRight:15}} className={"gradientLogo"} src={require("../assets/trainLogoColor2.png")} alt="NAVI CHAIN LOGO"/>
-                            <h1 style={{fontWeight:300, fontSize:25, fontFamily:"LEMONMILK", width:"fit-content"}} className={"gradientLogo"}>NAVI CHAIN</h1>
+                            <img style={{width:245, marginRight:15}} className={"gradientLogo"} src={require("../assets/trainLogoColor2.png")} alt="NAVI CHAIN LOGO"/>
                         </div>
                     </div>
                     <div style={{display:"flex",width:"100%"}}>

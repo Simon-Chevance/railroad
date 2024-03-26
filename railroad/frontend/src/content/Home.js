@@ -743,21 +743,11 @@ class Home extends Component {
 								width: "fit-content",
 							}}>
 							<img
-								style={{ width: 50, marginRight: 15 }}
+								style={{ width: 245, marginRight: 15 }}
 								className={"gradientLogo"}
 								src={require("../assets/trainLogoColor2.png")}
 								alt="NAVI CHAIN LOGO"
 							/>
-							<h1
-								style={{
-									fontWeight: 300,
-									fontSize: 25,
-									fontFamily: "LEMONMILK",
-									width: "fit-content",
-								}}
-								className={"gradientLogo"}>
-								NAVI CHAIN
-							</h1>
 						</div>
 					</div>
 					<div style={{ display: "flex", width: "100%" }}>
@@ -812,32 +802,23 @@ class Home extends Component {
 								userSelect: "none",
 							}}>
 							<img
-								style={{ width: 200, marginRight: 15 }}
+								style={{ width: 500, marginRight: 15 }}
 								className={"gradientLogo"}
 								src={require("../assets/trainLogoColor2.png")}
 								alt="NAVI CHAIN LOGO"
 							/>
-							<h1
-								style={{
-									fontWeight: 300,
-									fontSize: 65,
-									fontFamily: "LEMONMILK",
-								}}
-								className={"gradientLogo"}>
-								NAVI CHAIN
-							</h1>
 						</div>
 						{this.state.connected ? (
 							<>
 								<h2
-									style={{ color: "#FFF", fontWeight: 300, marginBottom: 10 }}
+									style={{ color: "#000", fontWeight: 300, marginBottom: 10 }}
 									className={"flexCenter"}>
 									Connecté en tant qu'
 									{this.state.admin ? "administrateur" : "utilisateur"}
 								</h2>
 								<h2
 									style={{
-										color: "#FFF",
+										color: "#000",
 										fontWeight: 300,
 										marginTop: 5,
 										fontSize: 18,
@@ -853,24 +834,13 @@ class Home extends Component {
 						) : (
 							<h2
 								style={{
-									color: "#FFF",
+									color: "#000",
 									fontWeight: 300,
 									marginTop: 36,
 									marginBottom: 70,
 								}}
 								className={"flexCenter"}>
-								Veuillez connecter votre wallet
-								<span
-									className={"flexCenter"}
-									style={{ fontSize: 30, margin: 5, fontWeight: 400 }}>
-									Metamask
-									<img
-										style={{ width: 35, margin: 5, marginRight: 0 }}
-										src={require("../metamask-logo.png")}
-										alt="metamask-logo"
-									/>
-								</span>
-								pour utiliser notre site web !
+								Veuillez connecter votre wallet pour utiliser ce site web !
 							</h2>
 						)}
 					</div>
@@ -1137,7 +1107,10 @@ class Home extends Component {
 								)}
 							</DialogContent>
 						</Dialog>
-
+						
+						{/*=============Panel================*/}					
+						{/*=============Fin Panel================*/}
+						{/*=============Panel Bus================*/}					
 						<div
 							className={"divNCWhite"}
 							id={"divTickets"}
@@ -1157,20 +1130,32 @@ class Home extends Component {
 										position: "absolute",
 										top: 0,
 									}}>
-									Mes tickets
+									Bus
 								</h1>
 							</div>
+							<br></br>
+							
 							<div
 								style={{
 									display: "flex",
 									justifyContent: "space-evenly",
 									alignItems: "center",
 									flexWrap: "wrap",
-									overflow: "auto",
-									height: "calc(100% - 65px)",
+									height: "300px",
 									margin: 15,
 									width: "100%",
 								}}>
+									<img
+									style={{
+										height:290,
+										width: 462,
+										borderRadius:70
+									}}
+							src={require("../assets/carte_bus.jpg")} // Remplacez par le chemin de votre image
+							alt="Image description" // Donnez une description alternative de l'image
+							/>
+
+								{/*=============Panel Bus================*/}
 								<div
 									style={{
 										maxWidth: 400,
@@ -1208,12 +1193,7 @@ class Home extends Component {
 										<div
 											style={{ width: 160, height: 140, position: "relative" }}>
 											<img
-												style={{
-													width: 160,
-													height: 160,
-													position: "absolute",
-													top: -10,
-												}}
+												className={"TicketImage"}
 												src={require("../assets/logoTicketBus.png")}
 												alt="ticket Bus"
 											/>
@@ -1279,8 +1259,55 @@ class Home extends Component {
 										</div>
 									</div>
 								</div>
-
-								<div
+									{/*=============FinPanel Bus================*/}				
+							</div>
+						</div>
+						{/*=============Fin Panel Bus================*/}
+						{/*=============Panel Metro================*/}					
+						<div
+							className={"divNCWhite"}
+							id={"divTickets"}
+							style={{ marginBottom: 8, justifyContent: "space-evenly" }}>
+							<div
+								className={"flexCenter"}
+								style={{
+									position: "relative",
+									width: "100%",
+									marginBottom: 20,
+								}}>
+								<h1
+									style={{
+										fontWeight: 300,
+										fontSize: 25,
+										fontFamily: "LEMONMILK",
+										position: "absolute",
+										top: 0,
+									}}>
+									Metro
+								</h1>
+							</div>
+							<br></br>
+							
+							<div
+								style={{
+									display: "flex",
+									justifyContent: "space-evenly",
+									alignItems: "center",
+									flexWrap: "wrap",
+									height: "300px",
+									margin: 15,
+									width: "100%",
+								}}>
+									<img
+									style={{
+										height:290,
+										width: 462,
+										borderRadius:70
+									}}
+							src={require("../assets/carte_metro.jpg")} // Remplacez par le chemin de votre image
+							alt="Image description" // Donnez une description alternative de l'image
+							/>		
+							<div
 									style={{
 										maxWidth: 400,
 										minWidth: 290,
@@ -1317,12 +1344,7 @@ class Home extends Component {
 										<div
 											style={{ width: 160, height: 140, position: "relative" }}>
 											<img
-												style={{
-													width: 160,
-													height: 160,
-													position: "absolute",
-													top: -10,
-												}}
+												className={"TicketImage"}
 												src={require("../assets/logoTicketMetro.png")}
 												alt="ticket Metro"
 											/>
@@ -1387,9 +1409,55 @@ class Home extends Component {
 											</p>
 										</div>
 									</div>
-								</div>
-
-								<div
+								</div>	
+							</div>
+								
+						</div>
+						{/*=============Fin Panel Metro================*/}
+						{/*=============Panel Train================*/}					
+						<div
+							className={"divNCWhite"}
+							id={"divTickets"}
+							style={{ marginBottom: 8, justifyContent: "space-evenly" }}>
+							<div
+								className={"flexCenter"}
+								style={{
+									position: "relative",
+									width: "100%",
+									marginBottom: 20,
+								}}>
+								<h1
+									style={{
+										fontWeight: 300,
+										fontSize: 25,
+										fontFamily: "LEMONMILK",
+										position: "absolute",
+										top: 0,
+									}}>
+									Train
+								</h1>
+							</div>
+							<br></br>
+							
+							<div
+								style={{
+									display: "flex",
+									justifyContent: "space-evenly",
+									alignItems: "center",
+									flexWrap: "wrap",
+									height: "300px",
+									margin: 15,
+									width: "100%",
+								}}>
+									<img
+									style={{
+										width: 462,
+										borderRadius:70
+									}}
+							src={require("../assets/carte_train.jpg")} // Remplacez par le chemin de votre image
+							alt="Image description" // Donnez une description alternative de l'image
+							/>
+							<div
 									style={{
 										maxWidth: 400,
 										minWidth: 290,
@@ -1426,12 +1494,7 @@ class Home extends Component {
 										<div
 											style={{ width: 160, height: 140, position: "relative" }}>
 											<img
-												style={{
-													width: 160,
-													height: 160,
-													position: "absolute",
-													top: -10,
-												}}
+												className={"TicketImage"}
 												src={require("../assets/logoTicketTrain.png")}
 												alt="ticket Train"
 											/>
@@ -1496,9 +1559,11 @@ class Home extends Component {
 											</p>
 										</div>
 									</div>
-								</div>
+								</div>			
 							</div>
+								
 						</div>
+						{/*=============Fin Panel Train================*/}
 						<div
 							className={"divNCWhite flexCenter"}
 							style={{
@@ -1815,8 +1880,9 @@ class Home extends Component {
 									)}
 								</div>
 							</div>
-						</div>
-					</div>
+						</div>	
+				</div>
+					
 				)}
 			</div>
 		);
