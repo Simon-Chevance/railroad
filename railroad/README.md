@@ -11,8 +11,4 @@
 
 5 - Le front est lancé en local sur le port 3000
 
-6 (optionnel) - Accéder au site via l'adresse ipv4 de la machine et pas localhost (sinon peut poser des erreurs de certificats)
-
-7 - Se connecter avec un compte metamask dans la blockchain "Testnet Goerli"
-
-8 - Done
+6 - Se connecter avec un compte metamask dans la blockchain Ganache
